@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>JS Class TP n2</title>
+        <script src="functions.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <audio src="beatbox.mp3" autoplay loop></audio>
+        <div style="text-align: center;" class="box">
+            <label><h1>Empleados</h1><br></label>
+            <table style="text-align: center; margin: 0 auto;">
+                <td>
+                    <label for="e1"><h3>Robert</h3></label>
+                    <input type="button" id="e1" onclick="CrearEmpleado('Robert',1944,'64C- WallsStreat')" value="Agregar" class="btn">
+                </td>
+                <td>
+                    <label for="e2"><h3>Sam</h3></label>
+                    <input type="button" id="e2" onclick="CrearEmpleado('Sam',2000,'68D- WallsStreat')" value="Agregar" class="btn">
+                </td>
+                <td>
+                    <label for="e3"><h3>John</h3></label>
+                    <input type="button" id="e3" onclick="CrearEmpleado('John', 1999, '26B- WallsStreat')" value="Agregar" class="btn">
+                </td>
+                <td style="text-align: center; margin: 0 auto;">
+                    <label for="e3"><h3>Personalizado</h3></label>
+                    
+                    <p> Nombre <input type="text" id="c1"  class="btn"> </p>
+                    <p> Año <input type="number" id="c2"  class="btn">
+                    <p> Direccion <input type="text" id="c3"  class="btn"> <br>
+                    <input type="button" id="e3" onclick="CustomEmpleado()" value="Agregar" class="btn">
+                </td>            
+            </table>
+            <br>
+            <table id="tablaM" style="text-align: center; margin: 0 auto; border: 1px solid;" >
+                <tr>
+                    <td width="25%"><label><b>Nombre</b></label></td>
+                    <td width="35%"><label><b>Año De Incorporación</b></label></td>
+                    <td width="40%"><label><b>Direccion</b></label></td>
+                </tr>
+            </table>
+            <br><label><h1 style="font-size:50px" id="answer"></h1></label>
+        </div>
+    </body>
+</html>
